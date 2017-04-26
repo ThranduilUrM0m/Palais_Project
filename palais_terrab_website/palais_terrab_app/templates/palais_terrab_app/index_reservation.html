@@ -1,20 +1,394 @@
 {% load static %}
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+	
 		<title>Palais Terrab</title>
 
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
 		<!-- Fonts and icons -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet"> 
 
 		<!-- CSS Files -->
+    	<link href="{% static 'palais_terrab_app/css/bootstrap.css' %}" rel="stylesheet" />
+    	<link href="{% static 'palais_terrab_app/css/bootstrap.min.css' %}" rel="stylesheet" />
+    	<link href="{% static 'palais_terrab_app/css/bootstrap-grid.css' %}" rel="stylesheet" />
+    	<link href="{% static 'palais_terrab_app/css/bootstrap-grid.min.css' %}" rel="stylesheet" />
+    	<link href="{% static 'palais_terrab_app/css/bootstrap-reboot.css' %}" rel="stylesheet" />
+    	<link href="{% static 'palais_terrab_app/css/bootstrap-reboot.min.css' %}" rel="stylesheet" />
+    	<link href="{% static 'palais_terrab_app/css/carousel.css' %}" rel="stylesheet" />
+
+    	<!-- SCSS Files -->
+    	<link href="{% static 'palais_terrab_app/css/main.css' %}" rel="stylesheet" />
 	</head>
 
 	<body>
-		index_reservation
+		<div class="container-fluid">
+			<!-- header beginning -->
+			<header class="header">
+				<div class="container">
+					<nav class="navbar navbar-toggleable-md navbar-light">
+						<div class="collapse navbar-collapse">
+						    <ul class="navbar-nav mr-auto menu_elements">
+							    <li class="nav-item adress_email">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<p>18, Avenue Zerktouni – 50000 – Meknès – MAROC</p>
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<p>palaisterrab@gmail.com</p>
+								</li>
+						    </ul>
+						    <ul class="navbar-nav social_media">
+								<li class="nav-item">
+									<a href="#" class="nav-link align-middle">
+										FR
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link align-middle">
+										EN
+									</a>
+								</li>
+						    </ul>
+					  	</div>
+					</nav>
+					<hr>
+					<nav class="navbar navbar-toggleable-md navbar-light">
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+						    <img src="{% static 'palais_terrab_app/media/logo.png' %}" width="50" height="70">
+					  	</a>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						    <ul class="navbar-nav mr-auto menu_elements">
+							    <li class="nav-item">
+									<a type="button" class="btn nav-link active" href="#">
+										<span>Accueil</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a type="button" class="btn  nav-link" href="{% url 'palais_terrab_app:index_reservation' %}">
+										<span>Reservations</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a type="button" class="btn  nav-link" href="{% url 'palais_terrab_app:index_menus' %}">
+										<span>Menus</span>
+									</a>
+								</li>
+					
+								<li class="nav-item dropdown">
+									<a type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+										<span data-toggle="dropdown-toggle">Restaurants</span>
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="{% url 'palais_terrab_app:index_chateau' %}"><span>Le Chateau</span></a>
+										<a class="dropdown-item" href="{% url 'palais_terrab_app:index_international' %}"><span>Restaurant International</span></a>
+										<a class="dropdown-item" href="{% url 'palais_terrab_app:index_lounge' %}"><span>Lounge</span></a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">360</a>
+								    </div>
+								</li>
+								
+								<li class="nav-item dropdown">
+									<a type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+										<span data-toggle="dropdown-toggle">Palais</span>
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="{% url 'palais_terrab_app:index_reunionetmeeting' %}"><span>Réunion & Meetings</span></a>
+										<a class="dropdown-item" href="{% url 'palais_terrab_app:index_salledesfetes' %}"><span>Salle des Fêtes</span></a>
+								    </div>
+								</li>
+						    </ul>
+						    <ul class="navbar-nav social_media">
+								<li class="nav-item">
+									<a href="#" class="nav-link align-middle">
+										<i class="fa fa-twitter-square align-middle" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link align-middle">
+										<i class="fa fa-facebook-official align-middle" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link align-middle">
+										<i class="fa fa-instagram align-middle" aria-hidden="true"></i>
+									</a>
+								</li>
+						    </ul>
+					  	</div>
+					</nav>
+				</div>
+			</header>
+			<!-- header ending -->
+
+			<!-- first section beginning -->
+			<section class="first_section-no-bg">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="nav_bread col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	                        <ol class="breadcrumb">
+	                            <li><a href="{% url 'palais_terrab_app:index_home' %}">Accueil</a></li>
+	                            <li><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+	                            <li><a href="#">Reservation</a></li>
+	                        </ol>
+	                    </div>
+                    </div>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+							<div id="dining_style" class="first_section_column">
+								<h4>Dining Style</h4>
+								<ul>
+									<li>Lorem ipsum dolor sit amet.</li>
+									<li>Lorem ipsum dolor sit amet.</li>
+									<li>Lorem ipsum dolor sit amet.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+							<div id="tags_column" class="first_section_column">
+								<ul id="tags">
+									<li><a href="#"><i class="fa fa-tags" aria-hidden="true"></i></a></li>
+									<li>
+										<div class="tag">
+										    <input type="checkbox" />
+										    <label for="">tag_one</label>
+										    <i class="fa fa-plus"></i>
+										    <i class="fa fa-check"></i> 
+										</div>
+										  
+										<div class="tag">
+										    <input type="checkbox" />
+										    <label for="">tag_two</label>
+										    <i class="fa fa-plus"></i>
+										    <i class="fa fa-check"></i> 
+										</div>
+										  
+										<div class="tag">
+										    <input type="checkbox" />
+										    <label for="">tag_three</label>
+										    <i class="fa fa-plus"></i>
+										    <i class="fa fa-check"></i> 
+										</div>
+										  
+										<div class="tag">
+										    <input type="checkbox" />
+										    <label for="">tag_four</label>
+										    <i class="fa fa-plus"></i>
+										    <i class="fa fa-check"></i> 
+										</div>
+										  
+										<div class="tag">
+										    <input type="checkbox" />
+										    <label for="">tag_five</label>
+										    <i class="fa fa-plus"></i>
+										    <i class="fa fa-check"></i> 
+										    
+										</div>
+										  
+										<div class="tag">
+										    <input type="checkbox" />
+										    <label for="">tag_six</label>
+										    <i class="fa fa-plus"></i>
+										    <i class="fa fa-check"></i> 
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="restaurant" class="first_section_column">
+								<h4>Restaurant Le Chateau</h4>
+								<svg class="fb-emotes-svg" style="display: none;">
+								  <symbol id="fb-emote-terrible" data-emote="terrible" viewBox="0 0 100 100">
+								    <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 l10,10 a10,10 0 0,1 -20,0 a10,10 0 0,1 10,-10"/>
+								    <path class="fb-emote__eye fb-emote__eye--right" d="M58,35 l10,-10 a10,10 0 0,1 0,20 a10,10 0 0,1 -10,-10"/>
+								    <path class="fb-emote__smile" d="M30,68 q20,-13 40,0 M30,68 q20,-13 40,0"/>
+								  </symbol>
+								  <symbol id="fb-emote-bad" data-emote="bad" viewBox="0 0 100 100">
+								    <path class="fb-emote__eye fb-emote__eye--left" d="M22,35 l10,-10 a10,10 0 0,1 0,20 a10,10 0 0,1 -10,-10"/>
+								    <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 l10,10 a10,10 0 0,1 -20,0 a10,10 0 0,1 10,-10"/>
+								    <path class="fb-emote__smile" d="M30,68 q20,-10 40,0 M30,68 q20,-10 40,0"/>
+								  </symbol>
+								  <symbol id="fb-emote-okay" viewBox="0 0 100 100">
+								    <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								    <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								    <path class="fb-emote__smile" d="M35,73 q20,-4 35,-8 M35,73 q20,-4 35,-8"/>
+								  </symbol>
+								  <symbol id="fb-emote-good" viewBox="0 0 100 100">
+								    <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								    <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								    <path class="fb-emote__smile" d="M30,68 q20,10 40,0 M30,68 q20,10 40,0"/>
+								  </symbol>
+								  <symbol id="fb-emote-great" viewBox="0 0 100 100">
+								    <path class="fb-emote__eye fb-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								    <path class="fb-emote__eye fb-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								    <path class="fb-emote__smile" d="M30,68 q20,15 40,0 M30,68 q20,0 40,0"/>
+								  </symbol>
+								</svg>
+
+								<div class="fb-cont">
+								  <div class="fb-heading">How was the help you received?</div>
+								  <div class="fb-cont__inner">
+								    <div class="fb-emote" data-emote="terrible">
+								      <svg><use xlink:href="#fb-emote-terrible"/></svg>
+								    </div>
+								    <div class="fb-emote" data-emote="bad">
+								      <svg><use xlink:href="#fb-emote-bad"/></svg>
+								    </div>
+								    <div class="fb-emote s--active" data-emote="okay">
+								      <svg><use xlink:href="#fb-emote-okay"/></svg>
+								    </div>
+								    <div class="fb-emote" data-emote="good">
+								      <svg><use xlink:href="#fb-emote-good"/></svg>
+								    </div>
+								    <div class="fb-emote" data-emote="great">
+								      <svg><use xlink:href="#fb-emote-great"/></svg>
+								    </div>
+								    <div class="fb-cont__drag-cont">
+								      <div class="fb-active-emote">
+								        <svg viewBox="0 0 100 100">
+								          <path class="fb-active-emote__eye fb-active-emote__eye--left" d="M32,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								          <path class="fb-active-emote__eye fb-active-emote__eye--right" d="M68,25 a10,10 0 0,1 0,20 a10,10 0 0,1 0,-20"/>
+								          <path class="fb-active-emote__smile" d="M35,73 q20,-4 35,-8 M35,73 q20,-4 35,-8"/>
+								        </svg>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- first section ending -->
+
+			<!-- footer beginning -->
+			<footer class="footer">
+				<div class="container">
+					<img src="">
+					<div id="top_footer" class="row">
+						<div id="contact_info" class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<h4>Contact Info</h4>
+							<div class="row">
+								<div class="columns col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<p>18, Avenue Zerktouni (V.N.)</p>
+									<p>Meknès - Maroc</p>
+								</div>
+								<div id="second_column" class="columns col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<p><strong>Phone</strong> : +212 (0) 535 526 100</p>
+									<p><strong>Phone</strong> : +212 (0) 535 510 317</p>
+									<p><strong>FAX</strong> : +212 (0) 535 521 456</p>
+									<p><strong>Email</strong> : palaisterrab@gmail.com</p>
+								</div>
+							</div>
+						</div>
+						<div id="navigation" class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+							<h4>Navigation</h4>
+							<div class="row">
+								<div id="first_navigation_column" class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<ul>
+										<li><a href="#">Accueil</a></li>
+										<li><a href="{% url 'palais_terrab_app:index_reservation' %}">Reservation</a></li>
+										<li><a href="{% url 'palais_terrab_app:index_menus' %}">Menus</a></li>
+										<li><a href="{% url 'palais_terrab_app:index_salledesfetes' %}">Salle des Fêtes</a></li>
+										<li><a href="{% url 'palais_terrab_app:index_reunionetmeeting' %}">Réunions & Meetings</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<ul>
+										<li><u><strong>Restaurants</strong></u></li>
+										<li><a href="{% url 'palais_terrab_app:index_chateau' %}">Le Chateau</a></li>
+										<li><a href="{% url 'palais_terrab_app:index_international' %}">International</a></li>
+										<li><a href="{% url 'palais_terrab_app:index_lounge' %}">Lounge</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="nous_contactez" class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+							<h4>Nous Contactez</h4>
+							<!-- content goes here -->
+				            <form accept-charset="UTF-8"  id="contactSubmit" action="https://formspree.io/zakariaeboutaleb@gmail.com" method="POST">{% csrf_token %}
+				              	<div class="row">
+				              		<div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					                	<input type="email" class="form-control" name="_replyto" id="exampleInputEmail1" placeholder="Adresse Mail">
+					            	</div>
+				              	</div>
+					            <div class="row">
+					            	<div id="last_name" class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					                	<input type="name" class="form-control" name="first_name" id="exampleInputName1" placeholder="Nom">
+					              	</div>
+					              	<div id="first_name" class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					                	<input type="name" class="form-control" name="last_name" id="exampleInputName2" placeholder="Prénom">
+					              	</div>
+					            </div>
+					            <div class="row">
+					            	<div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					                	<input type="name" class="form-control" name="subject" id="exampleInputSujet" placeholder="Sujet">
+					              	</div>
+					            </div>
+				              	<div class="row">
+				              		<div id="message_content" class="form-group col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+					                	<textarea class="form-control" name="message" id="exampleInputMessage" placeholder="Message..."></textarea>
+					              	</div>
+					              	<div id="message_submit" class="form-group col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+					              		<button type="submit" class="btn btn-default">Envoyer</button>
+					              	</div>
+				              	</div>
+				            </form>
+
+						</div>
+					</div>
+					<div id="bottom_footer" class="row">
+						<div id="follow_us" class="pull-left col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<nav class="navbar navbar-toggleable-md navbar-light">
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav social_media">
+										<li class="nav-item" id="follow_us_label">
+											<label class="nav-link align-middle">Follow Us On </label>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link align-middle">
+												<i class="fa fa-twitter-square align-middle" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link align-middle">
+												<i class="fa fa-facebook-official align-middle" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link align-middle">
+												<i class="fa fa-instagram align-middle" aria-hidden="true"></i>
+											</a>
+										</li>
+								    </ul>
+								</div>
+						    </nav>
+						</div>
+						<div id="copyright" class="pull-right col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							<span class="align-middle">Copyright &copy; 2017, Tous les droits sont réservés  <img src="{% static 'palais_terrab_app/media/logo.png' %}"></span>
+						</div>
+					</div>
+
+				</div>
+			</footer>
+			<!-- footer ending -->
+		</div>
 	</body>
+	<!--   Core JS Files   -->
+	<script src="{% static 'palais_terrab_app/js/jquery-3.2.1.js' %}" type="text/javascript"></script>
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="{% static 'palais_terrab_app/js/bootstrap.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'palais_terrab_app/js/bootstrap.js' %}" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.dropdown-toggle').dropdown()
+	});
+	</script>
+	<script src="https://use.fontawesome.com/f61b4ca99d.js"></script>
+	<script src="{% static 'palais_terrab_app/js/app.js' %}" type="text/javascript"></script>
 </html>

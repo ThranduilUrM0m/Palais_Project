@@ -1,353 +1,146 @@
-/* line 6, ../sass/main.scss */
-body * {
-  font-family: "Montserrat", sans-serif;
-}
+/*
+Syntax error: Invalid CSS after "  &": expected "{", was "-cont {"
+              
+              "-cont" may only be used at the beginning of a selector.
+        on line 27 of C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/_ratings.scss
+        from line 125 of C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/_firstsection.scss
+        from line 23 of C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/main.scss
 
-/* line 9, ../sass/main.scss */
-body {
-  background-color: #e1dce2;
-  padding: 0;
-}
-/* line 12, ../sass/main.scss */
-body .container-fluid {
-  padding: 0;
-}
-
-/* line 3, ../sass/_header.scss */
-.header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-/* line 9, ../sass/_header.scss */
-.header .adress_email * {
-  display: inline;
-  font-size: 10px;
-}
-/* line 13, ../sass/_header.scss */
-.header .social_media a {
-  font-size: 10px;
-}
-/* line 16, ../sass/_header.scss */
-.header hr {
-  margin: 0;
-}
-/* line 19, ../sass/_header.scss */
-.header #navbarSupportedContent {
-  margin-left: 3rem;
-}
-/* line 22, ../sass/_header.scss */
-.header .dropdown-menu-right {
-  min-width: 4rem;
-}
-/* line 25, ../sass/_header.scss */
-.header * {
-  color: gray;
-}
-/* line 29, ../sass/_header.scss */
-.header .menu_elements span {
-  font-size: 14px;
-  line-height: 3.14286;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  height: 44px;
-  text-decoration: none;
-  white-space: nowrap;
-  -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-tap-highlight-color: transparent;
-  outline-offset: -7px;
-}
-/* line 42, ../sass/_header.scss */
-.header .menu_elements li:not(.adress_email) {
-  width: 18vh;
-}
-/* line 45, ../sass/_header.scss */
-.header .menu_elements a:focus {
-  -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0);
-  box-shadow: 0 0 0 2px rgba(2, 117, 216, 0);
-}
-/* line 51, ../sass/_header.scss */
-.header .social_media li i, .header .social_media li span:not(.lang) {
-  font-size: 20px;
-}
-/* line 54, ../sass/_header.scss */
-.header .social_media li i, .header .social_media li span {
-  line-height: 2.14286;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  height: 44px;
-  text-decoration: none;
-  white-space: nowrap;
-  -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-tap-highlight-color: transparent;
-  outline-offset: -7px;
-}
-/* line 66, ../sass/_header.scss */
-.header .social_media li .lang {
-  font-size: 14px;
-}
-/* line 69, ../sass/_header.scss */
-.header .social_media li a {
-  text-align: center;
-}
-
-/* line 1, ../sass/_firstsection.scss */
-.first_section {
-  height: 100vh;
-  background: url("../media/bg_s1.jpeg") no-repeat right top;
-  background-size: cover;
-}
-/* line 3, ../sass/_firstsection.scss */
-.first_section .container-fluid {
-  height: 100%;
-}
-
-/* line 1, ../sass/_secondsection.scss */
-.second_section {
-  height: 100vh;
-}
-/* line 3, ../sass/_secondsection.scss */
-.second_section .whiteHat {
-  background-color: #fff;
-  width: 100%;
-  margin: -45px auto 50px;
-  padding: 45px 0;
-  position: relative;
-  z-index: 8888;
-  text-align: center;
-}
-/* line 12, ../sass/_secondsection.scss */
-.second_section .hatSize {
-  max-width: 870px;
-}
-/* line 15, ../sass/_secondsection.scss */
-.second_section .containerWhiteHat {
-  opacity: 1;
-  top: 0px;
-  position: relative;
-}
-/* line 20, ../sass/_secondsection.scss */
-.second_section .lineBlack {
-  height: 3px;
-  width: 100%;
-  margin: 15px auto 0;
-  max-width: 70px;
-  background-color: #1c1716;
-}
-/* line 27, ../sass/_secondsection.scss */
-.second_section .whiteHat .intro {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 30px;
-}
-/* line 32, ../sass/_secondsection.scss */
-.second_section .whiteHat .intro p, .second_section .whiteHat .intro h2 {
-  font-size: 12px;
-  line-height: 22px;
-  color: #5d585e;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-}
-/* line 38, ../sass/_secondsection.scss */
-.second_section .second_section_column {
-  background-color: #fff;
-  height: 50vh;
-  margin: .5rem;
-  padding: .5rem;
-  position: relative;
-  text-align: center;
-}
-/* line 45, ../sass/_secondsection.scss */
-.second_section .second_section_column *:not(i) {
-  font-size: 12px;
-  line-height: 22px;
-  color: #5d585e;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-}
-/* line 51, ../sass/_secondsection.scss */
-.second_section .second_section_column img {
-  width: 100%;
-}
-/* line 54, ../sass/_secondsection.scss */
-.second_section .second_section_column i {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
-/* line 59, ../sass/_secondsection.scss */
-.second_section .second_section_column .description_box {
-  height: 50%;
-  padding: 3vh;
-}
-/* line 64, ../sass/_secondsection.scss */
-.second_section .plate_box .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(128, 128, 128, 0);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-/* line 75, ../sass/_secondsection.scss */
-.second_section .plate_box:hover .overlay {
-  height: 100%;
-}
-/* line 79, ../sass/_secondsection.scss */
-.second_section .text {
-  white-space: nowrap;
-  color: white !important;
-  font-size: 20px !important;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-/* line 1, ../sass/_thirdsection.scss */
-.third_section {
-  height: 100vh;
-}
-/* line 3, ../sass/_thirdsection.scss */
-.third_section .container {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  height: 100%;
-}
-/* line 7, ../sass/_thirdsection.scss */
-.third_section .container img {
-  height: 100%;
-  object-fit: cover;
-}
-
-/* line 1, ../sass/_fourthsection.scss */
-.fourth_section {
-  height: 100vh;
-}
-/* line 3, ../sass/_fourthsection.scss */
-.fourth_section .container-fluid {
-  height: 100%;
-}
-/* line 5, ../sass/_fourthsection.scss */
-.fourth_section .container-fluid .row {
-  width: 100%;
-}
-/* line 8, ../sass/_fourthsection.scss */
-.fourth_section .container-fluid h1 {
-  text-align: center;
-  width: 100%;
-  font-family: 'Herr Von Muellerhoff', cursive;
-  font-size: 2.5em;
-  margin: 0;
-}
-/* line 15, ../sass/_fourthsection.scss */
-.fourth_section .container-fluid video {
-  width: 80%;
-  margin: 0px auto;
-}
-/* line 19, ../sass/_fourthsection.scss */
-.fourth_section .container-fluid i {
-  font-family: 'Herr Von Muellerhoff', cursive;
-  font-size: 2em;
-}
-
-/* line 1, ../sass/_footer.scss */
-.footer {
-  background-color: #030101;
-}
-/* line 3, ../sass/_footer.scss */
-.footer .container {
-  height: 100%;
-  padding: 15px;
-}
-/* line 6, ../sass/_footer.scss */
-.footer .container #top_footer {
-  padding-bottom: 0.5em;
-  border-bottom: 0.1em solid rgba(225, 220, 226, 0);
-}
-/* line 9, ../sass/_footer.scss */
-.footer .container #top_footer #contact_info {
-  font-size: 0.7em;
-  color: #e1dce2;
-}
-/* line 12, ../sass/_footer.scss */
-.footer .container #top_footer #contact_info p {
-  margin: 0;
-}
-/* line 15, ../sass/_footer.scss */
-.footer .container #top_footer #contact_info .columns {
-  padding-left: 0;
-}
-/* line 18, ../sass/_footer.scss */
-.footer .container #top_footer #contact_info #second_column {
-  padding-right: 0;
-}
-/* line 22, ../sass/_footer.scss */
-.footer .container #top_footer #navigation {
-  font-size: 0.7em;
-  color: #e1dce2;
-}
-/* line 25, ../sass/_footer.scss */
-.footer .container #top_footer #navigation ul {
-  padding: 0;
-}
-/* line 28, ../sass/_footer.scss */
-.footer .container #top_footer #navigation li {
-  list-style-type: none;
-}
-/* line 31, ../sass/_footer.scss */
-.footer .container #top_footer #navigation a {
-  color: #e1dce2;
-}
-/* line 34, ../sass/_footer.scss */
-.footer .container #top_footer #navigation #first_navigation_column {
-  padding-right: 0;
-}
-/* line 39, ../sass/_footer.scss */
-.footer .container #top_footer #nous_contactez h4 {
-  color: #e1dce2;
-}
-/* line 42, ../sass/_footer.scss */
-.footer .container #top_footer #nous_contactez #last_name, .footer .container #top_footer #nous_contactez #first_name {
-  display: inline;
-}
-/* line 45, ../sass/_footer.scss */
-.footer .container #top_footer #nous_contactez #message_content, .footer .container #top_footer #nous_contactez #message_submit {
-  margin: 0;
-}
-/* line 48, ../sass/_footer.scss */
-.footer .container #top_footer #nous_contactez button {
-  width: 100%;
-  height: 100%;
-}
-/* line 54, ../sass/_footer.scss */
-.footer .container #bottom_footer {
-  padding-top: 0.5em;
-  border-top: 0.1em solid rgba(225, 220, 226, 0);
-  color: #e1dce2;
-}
-/* line 58, ../sass/_footer.scss */
-.footer .container #bottom_footer i {
-  font-size: 1.5em;
-  color: #e1dce2;
-}
-/* line 62, ../sass/_footer.scss */
-.footer .container #bottom_footer label {
-  font-size: 1em;
-  color: #e1dce2;
-}
-/* line 67, ../sass/_footer.scss */
-.footer .container #bottom_footer #copyright img {
-  width: 30px;
-}
-/* line 70, ../sass/_footer.scss */
-.footer .container #bottom_footer #copyright span {
-  float: right;
-  margin: 0.5em auto;
-}
+Backtrace:
+C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/_ratings.scss:27
+C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/_firstsection.scss:125
+C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/main.scss:23
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1129:in `expected'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:675:in `simple_selector_sequence'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1076:in `throw_error'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:675:in `simple_selector_sequence'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:623:in `_selector'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:602:in `selector'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:586:in `selector_sequence'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:511:in `ruleset'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1086:in `catch_error'
+org/jruby/RubyKernel.java:1191:in `catch'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1086:in `catch_error'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:272:in `to_tree'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:222:in `visit_import'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:224:in `visit_import'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:224:in `visit_import'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+org/jruby/RubyKernel.java:2096:in `send'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+org/jruby/RubyMethod.java:133:in `call'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+org/jruby/RubyArray.java:1603:in `each'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+org/jruby/RubyKernel.java:1419:in `loop'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Users/Zakariae/Desktop/scout sass/Scout-Installer/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:\Users\Zakariae\Desktop\scout sass\Scout-Installer\bin\compass:12:in `(root)'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"  &\": expected \"{\", was \"-cont {\"\A               \A               \"-cont\" may only be used at the beginning of a selector.\A         on line 27 of C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/_ratings.scss\A         from line 125 of C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/_firstsection.scss\A         from line 23 of C:/Users/Zakariae/Palais_Project/palais_terrab_website/palais_terrab_app/static/palais_terrab_app/sass/main.scss"; }
