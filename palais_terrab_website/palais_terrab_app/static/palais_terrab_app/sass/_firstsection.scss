@@ -122,7 +122,110 @@
 			}
 			#restaurant{
 				text-align: left;
-				@import 'ratings';
+				$color: #333; $size: 5px;
+
+				*, *:before, *:after { box-sizing: border-box; }
+				#frame {
+				  	position: absolute;
+					margin: auto;
+					display: flex;
+					width: 10rem;
+						div{
+							cursor: pointer;
+						}
+						.overlay_emo_mad{
+							position: absolute;
+							left: 0.3rem;
+							top: -0.7rem;
+							width: 1.4rem;
+							height: 1.4rem;
+							-moz-border-radius: 0.7rem / 0.7rem;
+							-webkit-border-radius: 0.7rem / 0.7rem;
+							border-radius: 0.7rem / 0.7rem;
+						}
+						.overlay_emo_sad{
+							position: absolute;
+							left: 2.3rem;
+							top: -0.7rem;
+							width: 1.4rem;
+							height: 1.4rem;
+							-moz-border-radius: 0.7rem / 0.7rem;
+							-webkit-border-radius: 0.7rem / 0.7rem;
+							border-radius: 0.7rem / 0.7rem;
+						}
+						.overlay_emo_surprised{
+							position: absolute;
+							left: 4.3rem;
+							top: -0.7rem;
+							width: 1.4rem;
+							height: 1.4rem;
+							-moz-border-radius: 0.7rem / 0.7rem;
+							-webkit-border-radius: 0.7rem / 0.7rem;
+							border-radius: 0.7rem / 0.7rem;
+						}
+						.overlay_emo_happy{
+							position: absolute;
+							left: 6.3rem;
+							top: -0.7rem;
+							width: 1.4rem;
+							height: 1.4rem;
+							-moz-border-radius: 0.7rem / 0.7rem;
+							-webkit-border-radius: 0.7rem / 0.7rem;
+							border-radius: 0.7rem / 0.7rem;
+						}
+						.overlay_emo_excited{
+							position: absolute;
+							left: 8.3rem;
+							top: -0.7rem;
+							width: 1.4rem;
+							height: 1.4rem;
+							-moz-border-radius: 0.7rem / 0.7rem;
+							-webkit-border-radius: 0.7rem / 0.7rem;
+							border-radius: 0.7rem / 0.7rem;
+						}
+					  	[class*='emo-'] {
+					  		z-index: 10;
+						    position: relative;
+						    width: $size; 
+						    height: $size;
+						    margin: auto;
+						    border-radius: 100%;
+						    box-shadow: -5px -5px $color, 5px -5px $color;
+						    &:before {
+						      content: '';
+						      position: absolute;
+						      top: 0; left: 0; right: 0; bottom: 0;
+						      margin-left: -$size;
+						    }
+				  		}
+				  .emo-happy:before {
+				    width: $size * 3; height: $size * 2;
+				    border-radius: 0 0 100% 100%;
+				    border-bottom: $size - 2 solid $color;
+				  }
+				  .emo-excited:before {
+				    width: $size * 3; height: $size * 2;
+				    border-radius: 0 0 100% 100%;
+				    border-bottom: $size + 2 solid $color;
+				  }
+				  .emo-sad:before {
+				    width: $size * 3; height: $size * 2;
+				    margin-top: $size;
+				    border-radius: 100% 100% 0 0;
+				    border-top: $size - 2 solid $color;
+				  }
+				  .emo-mad:before {
+				    width: $size * 3;
+				    margin-top: $size;
+				    border: $size - 4 dashed $color;
+				  }
+				  .emo-surprised:before {
+				    width: $size * 3; height: $size + 3;
+				    margin-top: $size - 2;
+				    border-radius: $size;
+				    background: $color;
+				  }
+				}
 			}
 		}
 	}
