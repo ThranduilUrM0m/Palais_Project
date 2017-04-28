@@ -202,18 +202,76 @@
 							</div>
 							<div id="restaurant" class="first_section_column">
 								<h4>Restaurant Le Chateau</h4>
-								<div id='frame'>
-								  <div class='emo-mad'></div>
-								  <div class="overlay_emo_mad"></div>
-								  <div class='emo-sad'></div>
-								  <div class="overlay_emo_sad"></div>
-								  <div class='emo-surprised'></div>
-								  <div class="overlay_emo_surprised"></div>
-								  <div class='emo-happy'></div>
-								  <div class="overlay_emo_happy"></div>
-								  <div class='emo-excited'></div>
-								  <div class="overlay_emo_excited"></div>
-								</div>
+								<hr>
+								<h4>Reserver</h4>
+								<form class="form-inline row">
+								  
+								 	<div class="form-group col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+									  <label for="example-number-input" class="sr-only col-form-label">Personnes</label>
+									  <div class="input-group">
+									  	<div class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+									    <select class="form-control custom-select" id="inlineFormCustomSelect">
+										    <option selected>...</option>
+										    <option value="1">1 Personne</option>
+										    <script type="text/javascript">
+										    	for (var i = 2; i <= 60; i++) {
+										    		document.write('<option value="'+i+'">'+i+' Personnes</option>');
+										    	}
+										    </script>
+										</select>
+									  </div>
+									</div>
+									<div class="form-group col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+									  <label for="example-date-input" class="sr-only col-form-label">Date</label>
+									  <div class="input-group">
+									  	<div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+									    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+									  </div>
+									</div>
+									<div class="form-group col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+									  <label for="example-time-input" class="sr-only col-form-label">Heure</label>
+									  <div class="input-group">
+									  	<div class="input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+									    <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+									  </div>
+									</div>
+									<div class="form-group col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+								  		<button type="submit" class="btn btn-primary">Find a table</button>
+								  	</div>
+								</form>
+								<hr>
+								<form accept-charset="UTF-8"  id="contactSubmit" action="https://formspree.io/zakariaeboutaleb@gmail.com" method="POST">{% csrf_token %}
+						            <div class="row">
+						            	<div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+						            		<div class="row">
+						            			<div id="last_name" class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								                	<input type="name" class="form-control" name="first_name" id="exampleInputName1" placeholder="Nom">
+								              	</div>
+								              	<div id="first_name" class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								                	<input type="name" class="form-control" name="last_name" id="exampleInputName2" placeholder="Prénom">
+								              	</div>
+								            </div>
+								            <div class="row">
+								            	<div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								                	<input type="email" class="form-control" name="_replyto" id="exampleInputEmail1" placeholder="Adresse Mail">
+								            	</div>
+								            	<div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								                	<input type="tel" class="form-control" name="tel" value="1-(555)-555-5555" id="example-tel-input">
+								              	</div>
+								            </div>
+							              	<div class="row">
+							              		<div id="message_content" class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+								                	<textarea class="form-control" name="message" id="exampleInputMessage" placeholder="Special Request..."></textarea>
+								              	</div>
+							              	</div>
+								        </div>
+								        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								        	<div id="message_submit" class="form-group reservation_submit">
+							              		<button type="submit" class="btn btn-default">Completer</button>
+							              	</div>
+								        </div>
+						            </div>
+					            </form>
 							</div>
 						</div>
 					</div>
@@ -341,9 +399,21 @@
 	<script src="{% static 'palais_terrab_app/js/bootstrap.js' %}" type="text/javascript"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-	    $('.dropdown-toggle').dropdown()
+	    $('.dropdown-toggle').dropdown();
+	    $('.datepicker').datepicker();
 	});
 	</script>
 	<script src="https://use.fontawesome.com/f61b4ca99d.js"></script>
 	<script src="{% static 'palais_terrab_app/js/app.js' %}" type="text/javascript"></script>
+	<script src="js-webshim/minified/polyfiller.js"></script>
+	<script>
+	  //webshim.setOptions('basePath', '/js-webshim/minified/shims/');
+
+	  //request the features you need:
+	  webshim.polyfill('es5 mediaelement forms');
+	  
+	  $(function(){
+	    // use all implemented API-features on DOM-ready
+	  });
+	</script>
 </html>
