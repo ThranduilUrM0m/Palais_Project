@@ -24,10 +24,11 @@
 
     	<!-- SCSS Files -->
     	<link href="{% static 'palais_terrab_app/css/main.css' %}" rel="stylesheet" />
+    	<link rel="stylesheet" type="text/css" href="{% static 'palais_terrab_app/css/jquery.fullPage.css' %}" />
 	</head>
 
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid" id="fullpage">
 			<!-- header beginning -->
 			<header class="header">
 				<div class="container">
@@ -131,7 +132,7 @@
 			<!-- header ending -->
 
 			<!-- first section beginning -->
-			<section class="first_section">
+			<section class="first_section section">
 				<div class="container-fluid">
 					
 				</div>
@@ -139,7 +140,7 @@
 			<!-- first section ending -->
 
 			<!-- second section beginning -->
-			<section class="second_section">
+			<section class="second_section section">
 				<div class="container">
 					<div class="row">
 						<div id="PageContent" class="whiteHat hatSize">
@@ -196,7 +197,7 @@
 			<!-- second section ending -->
 
 			<!-- thrid section beginning -->
-			<section class="third_section">
+			<section class="third_section section">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
@@ -209,7 +210,7 @@
           					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 						<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
-							<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="{% static 'palais_terrab_app/media/inspiration.jpg' %}" data-holder-rendered="true">
+							<img class="featurette-image img-fluid mx-auto" src="{% static 'palais_terrab_app/media/inspiration.jpg' %}" data-holder-rendered="true">
 						</div>
 					</div>
 				</div>
@@ -217,7 +218,7 @@
 			<!-- third section ending -->
 
 			<!-- fourth section beginning -->
-			<section class="fourth_section">
+			<section class="fourth_section section">
 				<div class="container-fluid">
 					<div class="row">
 						<h1><i>T</i>he <i>P</i>erfect <i>B</i>lend</h3>
@@ -228,12 +229,13 @@
 			<!-- fourth section ending -->
 
 			<!-- footer beginning -->
-			<footer class="footer">
+			<footer style="background: url('{% static "palais_terrab_app/media/bg_s2.jpeg"%}')" class="footer section">
 				<div class="container">
 					<img src="">
 					<div id="top_footer" class="row">
 						<div id="contact_info" class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 							<h4>Contact Info</h4>
+							<hr>
 							<div class="row">
 								<div class="columns col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 									<p>18, Avenue Zerktouni (V.N.)</p>
@@ -249,6 +251,7 @@
 						</div>
 						<div id="navigation" class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
 							<h4>Navigation</h4>
+							<hr>
 							<div class="row">
 								<div id="first_navigation_column" class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 									<ul>
@@ -271,32 +274,48 @@
 						</div>
 						<div id="nous_contactez" class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
 							<h4>Nous Contactez</h4>
+							<hr>
 							<!-- content goes here -->
 				            <form accept-charset="UTF-8"  id="contactSubmit" action="https://formspree.io/zakariaeboutaleb@gmail.com" method="POST">{% csrf_token %}
 				              	<div class="row">
-				              		<div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-					                	<input type="email" class="form-control" name="_replyto" id="exampleInputEmail1" placeholder="Adresse Mail">
+				              		<div class="input input--manami form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					                	<input type="email" class="input__field input__field--manami form-control" name="_replyto" id="exampleInputEmail1">
+					                	<label class="input__label input__label--manami" for="exampleInputEmail1">
+											<span class="input__label-content input__label-content--manami">Adresse Email</span>
+										</label>
 					            	</div>
 				              	</div>
 					            <div class="row">
-					            	<div id="last_name" class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-					                	<input type="name" class="form-control" name="first_name" id="exampleInputName1" placeholder="Nom">
+					            	<div id="last_name" class="input input--manami form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					                	<input type="name" class="input__field input__field--manami form-control" name="first_name" id="exampleInputName1">
+					                	<label class="input__label input__label--manami" for="exampleInputName1">
+											<span class="input__label-content input__label-content--manami">Nom</span>
+										</label>
 					              	</div>
-					              	<div id="first_name" class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-					                	<input type="name" class="form-control" name="last_name" id="exampleInputName2" placeholder="Prénom">
+					              	<div id="first_name" class="input input--manami form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					                	<input type="name" class="input__field input__field--manami form-control" name="last_name" id="exampleInputName2">
+					                	<label class="input__label input__label--manami" for="exampleInputName2">
+											<span class="input__label-content input__label-content--manami">Prénom</span>
+										</label>
 					              	</div>
 					            </div>
 					            <div class="row">
-					            	<div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-					                	<input type="name" class="form-control" name="subject" id="exampleInputSujet" placeholder="Sujet">
+					            	<div class="input input--manami form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					                	<input type="name" class="input__field input__field--manami form-control" name="subject" id="exampleInputSujet">
+					                	<label class="input__label input__label--manami" for="exampleInputSujet">
+											<span class="input__label-content input__label-content--manami">Sujet</span>
+										</label>
 					              	</div>
 					            </div>
 				              	<div class="row">
-				              		<div id="message_content" class="form-group col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
-					                	<textarea class="form-control" name="message" id="exampleInputMessage" placeholder="Message..."></textarea>
+				              		<div id="message_content" class="input input--manami form-group col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+					                	<textarea class="input__field input__field--manami form-control" name="message" id="exampleInputMessage"></textarea>
+					                	<label class="textaria_label input__label input__label--manami" for="exampleInputMessage">
+											<span class="input__label-content input__label-content--manami">Message ...</span>
+										</label>
 					              	</div>
 					              	<div id="message_submit" class="form-group col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-					              		<button type="submit" class="btn btn-default">Envoyer</button>
+					              		<button type="submit" class="btn btn-danger">Envoyer</button>
 					              	</div>
 				              	</div>
 				            </form>
@@ -304,35 +323,44 @@
 						</div>
 					</div>
 					<div id="bottom_footer" class="row">
-						<div id="follow_us" class="pull-left col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-							<nav class="navbar navbar-toggleable-md navbar-light">
-								<div class="collapse navbar-collapse" id="navbarSupportedContent">
-									<ul class="navbar-nav social_media">
-										<li class="nav-item" id="follow_us_label">
-											<label class="nav-link align-middle">Follow Us On </label>
-										</li>
-										<li class="nav-item">
-											<a href="#" class="nav-link align-middle">
-												<i class="fa fa-twitter-square align-middle" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="#" class="nav-link align-middle">
-												<i class="fa fa-facebook-official align-middle" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="#" class="nav-link align-middle">
-												<i class="fa fa-instagram align-middle" aria-hidden="true"></i>
-											</a>
-										</li>
-								    </ul>
-								</div>
-						    </nav>
-						</div>
-						<div id="copyright" class="pull-right col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-							<span class="align-middle">Copyright &copy; 2017, Tous les droits sont réservés  <img src="{% static 'palais_terrab_app/media/logo.png' %}"></span>
-						</div>
+						<nav class="navbar navbar-toggleable-md navbar-light">
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							    <ul class="navbar-nav menu_elements">
+								    <li class="nav-item" id="follow_us_label">
+										<a class="nav-link">
+											<span class="align-middle">Follow Us On </span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">
+											<i class="fa fa-twitter-square align-middle" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">
+											<i class="fa fa-facebook-official align-middle" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">
+											<i class="fa fa-instagram align-middle" aria-hidden="true"></i>
+										</a>
+									</li>
+							    </ul>
+							    <ul class="navbar-nav ml-auto social_media">
+									<li class="nav-item">
+										<a class="nav-link">
+											<span class="align-middle">Copyright &copy; 2017, Tous les droits sont réservés</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">
+											<img class="align-middle" src="{% static 'palais_terrab_app/media/logo.png' %}">
+										</a>
+									</li>
+							    </ul>
+						  	</div>
+						</nav>
 					</div>
 
 				</div>
@@ -347,8 +375,13 @@
 	<script src="{% static 'palais_terrab_app/js/bootstrap.js' %}" type="text/javascript"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-	    $('.dropdown-toggle').dropdown()
+	    $('.dropdown-toggle').dropdown();
+		$('#fullpage').fullpage();
 	});
 	</script>
 	<script src="https://use.fontawesome.com/f61b4ca99d.js"></script>
+	<script src="{% static 'palais_terrab_app/js/vendors/jquery.easings.min.js' %}"></script>
+	<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+	<script type="text/javascript" src="{% static 'palais_terrab_app/js/vendors/scrolloverflow.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'palais_terrab_app/js/jquery.fullPage.js' %}"></script>
 </html>

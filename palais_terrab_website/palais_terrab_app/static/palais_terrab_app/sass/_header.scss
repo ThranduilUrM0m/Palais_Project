@@ -41,8 +41,8 @@
 			width: 18vh;
 		}
 		a:focus{
-			-webkit-box-shadow: 0 0 0 2px rgba(2,117,216,.005);
-			box-shadow: 0 0 0 2px rgba(2,117,216,.005);
+			-webkit-box-shadow: 0 0 0 2px $blue-fade;
+			box-shadow: 0 0 0 2px $blue-fade;
 		}
 	}
 	.social_media li{
