@@ -1,6 +1,7 @@
 .footer{
 	background-size: cover !important;
     background-repeat: no-repeat !important;
+    backgronud-position: -500px 0 !important;
 	.container{
 		input, textarea{
 			background-color: transparent;
@@ -19,7 +20,7 @@
 		  color: pink;
 		}
 		hr{
-			background-color: white;
+			background-color: $text-color;
 		}
 		height: 100%;
 		padding: 15px;
@@ -51,17 +52,11 @@
 				li{
 					list-style-type: none;
 				}
-				a{
-					color: $bg-color;
-				}
 				#first_navigation_column{
 					padding-right: 0;
 				}
 			}
 			#nous_contactez{
-				h4{
-					color: $bg-color;
-				}
 				#last_name, #first_name{
 					display: inline;
 				}
@@ -189,7 +184,7 @@
 
 		.input__label--manami::before {
 			height: 100%;
-			background: #A8A8A8;
+			background: $text-color;
 			top: 0;
 			-webkit-transform: translate3d(0, -100%, 0);
 			transform: translate3d(0, -100%, 0);
@@ -199,7 +194,7 @@
 
 		.input__label--manami::after {
 			height: 2px;
-			background: #A8A8A8;
+			background: $text-color;
 			top: 100%;
 			-webkit-transition: opacity 0.2s;
 			transition: opacity 0.2s;
@@ -242,13 +237,13 @@
 
 		.input__field--manami:focus + .input__label--manami .input__label-content--manami,
 		.input--filled .input__label--manami .input__label-content--manami {
-			color: #cbc4c6;
+			color: $text-color;
 			-webkit-transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
 			transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
 		}
 		#message_content .input__field--manami:focus + .input__label--manami .input__label-content--manami,
 		#message_content .input--filled .input__label--manami .input__label-content--manami{
-			color: #cbc4c6;
+			color: $text-color;
 			-webkit-transform: translate3d(0, 4.1em, 0) scale3d(0.65, 0.65, 1);
 			transform: translate3d(0, 4.1em, 0) scale3d(0.65, 0.65, 1);
 		}

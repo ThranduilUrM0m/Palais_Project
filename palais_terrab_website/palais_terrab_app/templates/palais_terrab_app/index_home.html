@@ -28,6 +28,20 @@
 	</head>
 
 	<body>
+		<!-- Preloader -->
+		<div id="preloader" class="demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<div class="loading-bro">
+					  <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
+					    <circle id="loading-inner" cx="75" cy="75" r="60"/>
+					 </svg>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Body Content -->
 		<div class="container-fluid" id="fullpage">
 			<!-- header beginning -->
 			<header class="header">
@@ -201,7 +215,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-							<h2 class="featurette-heading">Besoin d'inspiration ? <br><span class="text-muted">It'll blow your mind.</span></h2>
+							<h2 class="featurette-heading">Besoin d'inspiration ? <br><span>It'll blow your mind.</span></h2>
           					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -373,15 +387,23 @@
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 	<script src="{% static 'palais_terrab_app/js/bootstrap.min.js' %}" type="text/javascript"></script>
 	<script src="{% static 'palais_terrab_app/js/bootstrap.js' %}" type="text/javascript"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-	    $('.dropdown-toggle').dropdown();
-		$('#fullpage').fullpage();
-	});
-	</script>
+	<script src="https://use.fontawesome.com/f61b4ca99d.js"></script>
+	<script type="text/javascript" src="{% static 'palais_terrab_app/js/app.js' %}"></script>
 	<script src="https://use.fontawesome.com/f61b4ca99d.js"></script>
 	<script src="{% static 'palais_terrab_app/js/vendors/jquery.easings.min.js' %}"></script>
 	<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 	<script type="text/javascript" src="{% static 'palais_terrab_app/js/vendors/scrolloverflow.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'palais_terrab_app/js/jquery.fullPage.js' %}"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.dropdown-toggle').dropdown();
+	});
+	</script>
+
+	<script src="{% static 'palais_terrab_app/js/TweenLite.min.js' %}"></script>
+	<script src="{% static 'palais_terrab_app/js/EasePack.min.js' %}"></script>
+	<script src="{% static 'palais_terrab_app/js/rAF.js' %}"></script>
+	<script src="{% static 'palais_terrab_app/js/demo-1.js' %}"></script>
+
 </html>

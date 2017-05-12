@@ -43,3 +43,9 @@ $("#frame [class*='emo-']").on("click", function(){
 		$('.overlay_emo_happy').css('background-color', 'transparent');
 	}
 });
+
+//<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('.demo-1').delay(320).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    })
+//]]>

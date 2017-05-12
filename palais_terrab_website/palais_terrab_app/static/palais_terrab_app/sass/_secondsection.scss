@@ -22,7 +22,7 @@
 	    width: 100%;
 	    margin: 15px auto 0;
 	    max-width: 70px;
-	    background-color: #1c1716;
+	    background-color: $text-color;
 	}
 	.whiteHat .intro {
 	    width: 90%;
@@ -32,7 +32,6 @@
 	.whiteHat .intro p, .whiteHat .intro h2 {
 	    font-size: 12px;
 	    line-height: 22px;
-	    color: #5d585e;
 	    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 	}
 	.second_section_column{
@@ -45,7 +44,6 @@
 	    *:not(i){
 	    	font-size: 12px;
 		    line-height: 22px;
-		    color: #5d585e;
 		    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 	    }
 	    img{
@@ -77,8 +75,7 @@
 	}
 
 	.text {
-	  white-space: nowrap; 
-	  color: white !important;
+	  white-space: nowrap;
 	  font-size: 20px !important;
 	  position: absolute;
 	  overflow: hidden;
